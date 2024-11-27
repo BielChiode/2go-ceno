@@ -2,7 +2,6 @@ import { Box, Container, Grid2, Typography, useTheme } from '@mui/material';
 import SpeedIcon from '@mui/icons-material/Speed';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import MemoryIcon from '@mui/icons-material/Memory';
-import CelebrationIcon from '@mui/icons-material/Celebration';
 import ConstructionIcon from '@mui/icons-material/Construction';
 
 export function Sobre() {
