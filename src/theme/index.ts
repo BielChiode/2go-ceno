@@ -1,5 +1,18 @@
 import { createTheme } from '@mui/material/styles';
 
+declare module '@mui/material/styles' {
+  interface Theme {
+    custom: {
+      sectionBackground: string;
+    };
+  }
+  interface ThemeOptions {
+    custom?: {
+      sectionBackground?: string;
+    };
+  }
+}
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -11,6 +24,9 @@ const theme = createTheme({
       main: '#54C7D1',
       dark: '#168793',
     },
+    background: {
+      default: '#F4F4F4',
+    },
   },
   typography: {
     fontFamily: '"Open Sans", sans-serif',
@@ -18,6 +34,9 @@ const theme = createTheme({
       fontSize: '2.5rem',
       fontWeight: 700,
     },
+  },
+  custom: {
+    sectionBackground: '#EEEEEE',
   },
 });
 

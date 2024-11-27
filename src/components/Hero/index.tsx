@@ -22,7 +22,7 @@ const slides = [
   },
 ];
 
-export default function Hero() {
+export function Hero() {
   const settings = {
     dots: true,
     infinite: true,

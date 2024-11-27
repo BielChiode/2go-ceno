@@ -1,6 +1,6 @@
 import { Box, Container, Grid2 } from '@mui/material';
 
-export default function Portfolio() {
+export function Portifolio() {
   return (
     <Box id="portfolio" py={10}>
       <Container maxWidth="lg">

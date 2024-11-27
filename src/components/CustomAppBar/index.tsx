@@ -2,7 +2,7 @@ import { Toolbar, AppBar, Button, Box } from '@mui/material';
 // import { useTheme } from '@mui/material/styles';
 import logo from '../../assets/favicon.png'; // Substitua pelo caminho correto do seu logo
 
-export default function CustomAppBar() {
+export function CustomAppBar() {
   const handleScroll = (sectionId: string) => {
     const section = document.querySelector(sectionId);
     if (section) {

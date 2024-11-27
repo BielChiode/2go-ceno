@@ -2,7 +2,7 @@ import { Box, Container, Grid2, Link, Typography } from '@mui/material';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 
-export default function Contact() {
+export function Contato() {
   return (
     <Box id="contact" py={10} bgcolor="grey.100">
       <Container maxWidth="md">
