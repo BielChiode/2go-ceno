@@ -4,11 +4,13 @@ declare module '@mui/material/styles' {
   interface Theme {
     custom: {
       sectionBackground: string;
+      sectionBackgroundSecondary: string;
     };
   }
   interface ThemeOptions {
     custom?: {
       sectionBackground?: string;
+      sectionBackgroundSecondary?: string;
     };
   }
 }
@@ -37,6 +39,7 @@ const theme = createTheme({
   },
   custom: {
     sectionBackground: '#EEEEEE',
+    sectionBackgroundSecondary: '#131313',
   },
 });
 

@@ -7,6 +7,7 @@ import { Servicos } from './components/Servicos';
 import { Sobre } from './components/Sobre';
 import { Portifolio } from './components/Portifolio';
 import { Contato } from './components/Contato';
+import { SobreTime } from './components/SobreTime';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,8 @@ const App: React.FC = () => {
       <Servicos />
       <Sobre />
       <Portifolio />
+      {/* Lista de marcas */}
+      <SobreTime />
       <Contato />
     </ThemeProvider>
   );

@@ -46,6 +46,18 @@ export function CustomAppBar() {
         >
           <Button
             color="inherit"
+            onClick={() => handleScroll('#services')}
+            sx={(theme) => ({
+              '&:hover': {
+                backgroundColor: theme.palette.primary.dark,
+                color: '#fff',
+              },
+            })}
+          >
+            Serviços
+          </Button>
+          <Button
+            color="inherit"
             onClick={() => handleScroll('#about')}
             sx={(theme) => ({
               '&:hover': {
@@ -55,18 +67,6 @@ export function CustomAppBar() {
             })}
           >
             Quem Somos
-          </Button>
-          <Button
-            color="inherit"
-            onClick={() => handleScroll('#team')}
-            sx={(theme) => ({
-              '&:hover': {
-                backgroundColor: theme.palette.primary.dark,
-                color: '#fff',
-              },
-            })}
-          >
-            Equipe
           </Button>
           <Button
             color="inherit"
@@ -82,7 +82,7 @@ export function CustomAppBar() {
           </Button>
           <Button
             color="inherit"
-            onClick={() => handleScroll('#services')}
+            onClick={() => handleScroll('#equipe')}
             sx={(theme) => ({
               '&:hover': {
                 backgroundColor: theme.palette.primary.dark,
@@ -90,8 +90,9 @@ export function CustomAppBar() {
               },
             })}
           >
-            Serviços
+            Equipe
           </Button>
+
           <Button
             color="inherit"
             onClick={() => handleScroll('#contact')}
