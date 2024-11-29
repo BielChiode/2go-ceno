@@ -6,7 +6,7 @@ export function SobreTime() {
   return (
     <Box
       id="equipe"
-      py={2}
+      py={5}
       my={5}
       sx={{
         backgroundColor: theme.custom.sectionBackgroundSecondary,

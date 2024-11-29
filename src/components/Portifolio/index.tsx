@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Grid2, Typography } from '@mui/material';
 import SectionTitle from '../SectionTitle';
 
 const portfolioImages = [
@@ -26,14 +26,17 @@ export function Portifolio() {
   return (
     <Box id="portfolio">
       <Container maxWidth="xl">
-        <SectionTitle clickable>Portifólio</SectionTitle>
+        <SectionTitle>Portifólio</SectionTitle>
         <Box
           sx={{
             display: 'flex',
             overflowX: 'auto',
             flexWrap: 'nowrap',
             paddingBottom: 2,
-            '&::-webkit-scrollbar': { height: 8 },
+            '&::-webkit-scrollbar': {
+              height: 8,
+              display: { xs: 'none', md: 'block' },
+            },
             '&::-webkit-scrollbar-thumb': {
               backgroundColor: '#8b949e',
               borderRadius: 10,
@@ -100,6 +103,86 @@ export function Portifolio() {
             ))}
           </Box>
         </Box>
+      </Container>
+      <EmpresasAtendidas />
+    </Box>
+  );
+}
+
+const empresasAtendidas = [
+  { src: '/assets/logos/biesterfield.png' },
+  { src: '/assets/logos/bimbo.png' },
+  { src: '/assets/logos/biogen.png' },
+  { src: '/assets/logos/bombay.png' },
+  { src: '/assets/logos/chamex.png' },
+  { src: '/assets/logos/creditas.png' },
+  { src: '/assets/logos/decolar.png' },
+  { src: '/assets/logos/embratel.png' },
+  { src: '/assets/logos/ford.png' },
+  { src: '/assets/logos/hbo-max.png' },
+  { src: '/assets/logos/heineken.png' },
+  { src: '/assets/logos/leao.png' },
+  { src: '/assets/logos/livelo.png' },
+  { src: '/assets/logos/mdias.png' },
+  { src: '/assets/logos/nivea.png' },
+  { src: '/assets/logos/nutella.png' },
+  { src: '/assets/logos/P&G.png' },
+  { src: '/assets/logos/schweppes.png' },
+  { src: '/assets/logos/serasa.png' },
+  { src: '/assets/logos/uol.png' },
+];
+
+function EmpresasAtendidas() {
+  return (
+    <Box pt={5} sx={{ backgroundColor: '#ffffff' }}>
+      <Container maxWidth="xl">
+        <Grid2
+          container
+          alignItems="center"
+          spacing={6}
+          sx={{
+            display: 'flex',
+            flexWrap: 'nowrap',
+            overflowX: 'auto',
+            paddingBottom: 2,
+            '&::-webkit-scrollbar': {
+              height: 8,
+              display: { xs: 'none', md: 'block' },
+            },
+            '&::-webkit-scrollbar-thumb': {
+              backgroundColor: '#8b949e',
+              borderRadius: 10,
+            },
+            '&::-webkit-scrollbar-track': {
+              backgroundColor: '#FFF',
+            },
+          }}
+        >
+          {empresasAtendidas.map((logo, index) => (
+            <Grid2
+              key={index}
+              sx={{
+                flexShrink: 0,
+                textAlign: 'center',
+                width: { xs: 120, sm: 120 },
+              }}
+            >
+              <Box
+                component="img"
+                src={logo.src}
+                alt={`Logo ${index}`}
+                sx={{
+                  maxWidth: '100%',
+                  maxHeight: 80,
+                  height: 'auto',
+                  objectFit: 'contain', // Garante que a imagem inteira seja exibida
+                  filter: 'grayscale(100%)',
+                  '&:hover': { filter: 'grayscale(0%)' },
+                }}
+              />
+            </Grid2>
+          ))}
+        </Grid2>
       </Container>
     </Box>
   );
