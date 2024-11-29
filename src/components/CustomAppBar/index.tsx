@@ -1,6 +1,13 @@
 import { Toolbar, AppBar, Button, Box } from '@mui/material';
-// import { useTheme } from '@mui/material/styles';
-import logo from '../../assets/favicon.png'; // Substitua pelo caminho correto do seu logo
+import logo from '../../assets/favicon.png';
+
+const navegacao = [
+  { titulo: 'Serviços', id: '#services' },
+  { titulo: 'Quem Somos', id: '#about' },
+  { titulo: 'Portfólio', id: '#portfolio' },
+  { titulo: 'Equipe', id: '#equipe' },
+  { titulo: 'Contato', id: '#contato' },
+];
 
 export function CustomAppBar() {
   const handleScroll = (sectionId: string) => {
@@ -38,73 +45,26 @@ export function CustomAppBar() {
         <Box
           sx={{
             display: 'flex',
-            gap: '15px',
+            gap: { xs: 4, md: 2 },
             overflowX: 'auto',
             whiteSpace: 'nowrap',
-            pl: 2,
           }}
         >
-          <Button
-            color="inherit"
-            onClick={() => handleScroll('#services')}
-            sx={(theme) => ({
-              '&:hover': {
-                backgroundColor: theme.palette.primary.dark,
-                color: '#fff',
-              },
-            })}
-          >
-            Serviços
-          </Button>
-          <Button
-            color="inherit"
-            onClick={() => handleScroll('#about')}
-            sx={(theme) => ({
-              '&:hover': {
-                backgroundColor: theme.palette.primary.dark,
-                color: '#fff',
-              },
-            })}
-          >
-            Quem Somos
-          </Button>
-          <Button
-            color="inherit"
-            onClick={() => handleScroll('#portfolio')}
-            sx={(theme) => ({
-              '&:hover': {
-                backgroundColor: theme.palette.primary.dark,
-                color: '#fff',
-              },
-            })}
-          >
-            Portfólio
-          </Button>
-          <Button
-            color="inherit"
-            onClick={() => handleScroll('#equipe')}
-            sx={(theme) => ({
-              '&:hover': {
-                backgroundColor: theme.palette.primary.dark,
-                color: '#fff',
-              },
-            })}
-          >
-            Equipe
-          </Button>
-
-          <Button
-            color="inherit"
-            onClick={() => handleScroll('#contact')}
-            sx={(theme) => ({
-              '&:hover': {
-                backgroundColor: theme.palette.primary.dark,
-                color: '#fff',
-              },
-            })}
-          >
-            Contato
-          </Button>
+          {navegacao.map((item, index) => (
+            <Button
+              key={index}
+              color="inherit"
+              onClick={() => handleScroll(item.id)}
+              sx={(theme) => ({
+                '&:hover': {
+                  backgroundColor: theme.palette.primary.dark,
+                  color: '#fff',
+                },
+              })}
+            >
+              {item.titulo}
+            </Button>
+          ))}
         </Box>
         <Box></Box>
       </Toolbar>

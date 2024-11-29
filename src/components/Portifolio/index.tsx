@@ -175,7 +175,7 @@ function EmpresasAtendidas() {
                   maxWidth: '100%',
                   maxHeight: 80,
                   height: 'auto',
-                  objectFit: 'contain', // Garante que a imagem inteira seja exibida
+                  objectFit: 'contain',
                   filter: 'grayscale(100%)',
                   '&:hover': { filter: 'grayscale(0%)' },
                 }}
