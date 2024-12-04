@@ -36,7 +36,7 @@ const testimonials = [
 
 export function Depoimentos() {
   return (
-    <Box sx={{ py: 8, px: 4, backgroundColor: '#f9f9f9' }}>
+    <Box py={5} my={5}>
       <SectionTitle>Depoimentos</SectionTitle>
       <Box
         sx={{
