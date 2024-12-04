@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-// Array de objetos com as imagens e textos de cada slide
 const slides = [
   {
     image: '/assets/biesterfield.jpg',
@@ -34,7 +33,15 @@ export function Hero() {
   };
 
   return (
-    <Box sx={{ position: 'relative', height: '700px' }} id="top">
+    <Box
+      sx={{
+        position: 'relative',
+        height: '700px',
+        width: '100%',
+        overflow: 'hidden',
+      }}
+      id="top"
+    >
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <Box
