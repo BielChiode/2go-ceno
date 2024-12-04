@@ -1,8 +1,7 @@
 import { Box, Container, Typography, useTheme, Grid2 } from '@mui/material';
-import SpeedIcon from '@mui/icons-material/Speed';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import MemoryIcon from '@mui/icons-material/Memory';
-import ConstructionIcon from '@mui/icons-material/Construction';
+import ArticleIcon from '@mui/icons-material/Article';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const indicadores = [
   { value: '+90%', label: 'Dos clientes recomendam a 2GO' },
@@ -12,28 +11,21 @@ const indicadores = [
 
 const dados = [
   {
-    icon: <ConstructionIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
-    title: 'SOMOS MAKERS',
+    icon: <ArticleIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
+    title: 'Missão',
     description:
-      'Dentro de um terreno fértil, estimulante e colaborativo somos capazes de fabricar, construir, reproduzir e/ou criar qualquer tipo de ambiente.',
+      'Transformar ideias em experiências visuais impactantes, criando cenografias únicas e personalizadas que elevam a qualidade de eventos e produções. Nosso compromisso é entregar soluções criativas e técnicas que encantem nossos clientes e o público.',
   },
   {
-    icon: <MemoryIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
-    title: 'COOLHUNTERS & TECNOLÓGICOS',
+    icon: <VisibilityIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
+    title: 'Visão',
     description:
-      'Um olhar sempre a frente em busca de novas soluções, tendências e tecnologias que possam contribuir com nossos produtos e serviços.',
+      'Ser referência no mercado de cenografia, reconhecida pela inovação, excelência e capacidade de transformar qualquer espaço em um cenário inesquecível, superando as expectativas dos clientes e acompanhando as tendências do setor.',
   },
   {
     icon: <LightbulbIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
-    title: 'CRIATIVOS E INOVADORES',
-    description:
-      'Uma cultura de inovação e criatividade praticada por todos os profissionais, sempre em busca de soluções inéditas e viáveis.',
-  },
-  {
-    icon: <SpeedIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
-    title: 'ÁGEIS E VIABILIZADORES',
-    description:
-      'Para cada eventualidade, natural do nosso setor, uma resposta ágil, adequada e viável, mitigando os eventuais riscos no menor tempo possível.',
+    title: 'Valores',
+    description: `Criatividade: Valorizamos a inovação e originalidade em cada projeto. Excelência: Buscamos a perfeição em cada detalhe, garantindo a máxima qualidade. Comprometimento: Nos dedicamos a cumprir prazos e entregar resultados que superam expectativas. Colaboração: Trabalhamos em equipe para alcançar o melhor resultado. Sustentabilidade: Priorizamos práticas que minimizem o impacto ambiental, utilizando materiais e processos sustentáveis.`,
   },
 ];
 export function Sobre() {
@@ -98,10 +90,11 @@ export function Sobre() {
           >
             <Grid2 container spacing={4}>
               {dados.map((item, index) => (
-                <Grid2 size={{ xs: 12, sm: 6 }} key={index}>
-                  <Box
-                    sx={{ display: 'flex', alignItems: 'center', gap: 2 }}
-                  >
+                <Grid2
+                  size={{ xs: 12, sm: item.title === 'Valores' ? 12 : 6 }}
+                  key={index}
+                >
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                     {item.icon}
                     <Box>
                       <Typography variant="h6" fontWeight={700}>
