@@ -1,26 +1,21 @@
 import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
-import { CustomAppBar } from './components/CustomAppBar';
-import { Hero } from './components/Hero';
-import { Servicos } from './components/Servicos';
-import { Sobre } from './components/Sobre';
-import { Portifolio } from './components/Portifolio';
-import { SobreTime } from './components/SobreTime';
-import { Depoimentos } from './components/Depoimentos';
-import { Footer } from './components/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Detalhes } from './pages/Detalhes';
+import { NotFound } from './pages/NotFound';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <CustomAppBar />
-      <Hero />
-      <Servicos />
-      <Sobre />
-      <Portifolio />
-      <SobreTime />
-      <Depoimentos />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detalhes/:id" element={<Detalhes />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };

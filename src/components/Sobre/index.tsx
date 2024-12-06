@@ -11,6 +11,11 @@ const indicadores = [
 
 const dados = [
   {
+    icon: <LightbulbIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
+    title: 'Valores',
+    description: `Criatividade: Valorizamos a inovação e originalidade em cada projeto. Excelência: Buscamos a perfeição em cada detalhe, garantindo a máxima qualidade. Comprometimento: Nos dedicamos a cumprir prazos e entregar resultados que superam expectativas. Colaboração: Trabalhamos em equipe para alcançar o melhor resultado. Sustentabilidade: Priorizamos práticas que minimizem o impacto ambiental, utilizando materiais e processos sustentáveis.`,
+  },
+  {
     icon: <ArticleIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
     title: 'Missão',
     description:
@@ -22,12 +27,8 @@ const dados = [
     description:
       'Ser referência no mercado de cenografia, reconhecida pela inovação, excelência e capacidade de transformar qualquer espaço em um cenário inesquecível, superando as expectativas dos clientes e acompanhando as tendências do setor.',
   },
-  {
-    icon: <LightbulbIcon sx={{ fontSize: '2.5rem', color: '#000000' }} />,
-    title: 'Valores',
-    description: `Criatividade: Valorizamos a inovação e originalidade em cada projeto. Excelência: Buscamos a perfeição em cada detalhe, garantindo a máxima qualidade. Comprometimento: Nos dedicamos a cumprir prazos e entregar resultados que superam expectativas. Colaboração: Trabalhamos em equipe para alcançar o melhor resultado. Sustentabilidade: Priorizamos práticas que minimizem o impacto ambiental, utilizando materiais e processos sustentáveis.`,
-  },
 ];
+
 export function Sobre() {
   const theme = useTheme();
 

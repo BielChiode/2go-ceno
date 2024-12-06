@@ -1,5 +1,6 @@
-import { Toolbar, AppBar, Button, Box } from '@mui/material';
+import { Toolbar, AppBar, Button, Box, Typography } from '@mui/material';
 import logo from '../../assets/favicon.png';
+import { NavLink } from 'react-router-dom';
 
 const navegacao = [
   { titulo: 'Serviços', id: '#services' },
@@ -9,7 +10,13 @@ const navegacao = [
   { titulo: 'Contato', id: '#contato' },
 ];
 
-export function CustomAppBar() {
+export function CustomAppBar({
+  showMenu,
+  titulo,
+}: {
+  showMenu: boolean;
+  titulo?: string;
+}) {
   const handleScroll = (sectionId: string) => {
     const section = document.querySelector(sectionId);
     if (section) {
@@ -34,38 +41,45 @@ export function CustomAppBar() {
           }}
           onClick={() => handleScroll('#top')}
         >
-          <img
-            src={logo}
-            alt="Logo"
-            style={{ width: '50px', height: '50px', marginRight: '20px' }}
-          />
+          <NavLink to="/">
+            <img
+              src={logo}
+              alt="Logo"
+              style={{ width: '50px', height: '50px', marginRight: '20px' }}
+            />
+          </NavLink>
         </Box>
 
         {/* Navegação */}
-        <Box
-          sx={{
-            display: 'flex',
-            gap: { xs: 4, md: 2 },
-            overflowX: 'auto',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          {navegacao.map((item, index) => (
-            <Button
-              key={index}
-              color="inherit"
-              onClick={() => handleScroll(item.id)}
-              sx={(theme) => ({
-                '&:hover': {
-                  backgroundColor: theme.palette.primary.dark,
-                  color: '#fff',
-                },
-              })}
-            >
-              {item.titulo}
-            </Button>
-          ))}
-        </Box>
+        {showMenu ? (
+          <Box
+            sx={{
+              display: 'flex',
+              gap: { xs: 4, md: 2 },
+              overflowX: 'auto',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {navegacao.map((item, index) => (
+              <Button
+                key={index}
+                color="inherit"
+                onClick={() => handleScroll(item.id)}
+                sx={(theme) => ({
+                  '&:hover': {
+                    backgroundColor: theme.palette.primary.dark,
+                    color: '#fff',
+                  },
+                })}
+              >
+                {item.titulo}
+              </Button>
+            ))}
+          </Box>
+        ) : (
+          <Typography variant="h6">{titulo}</Typography>
+        )}
+
         <Box></Box>
       </Toolbar>
     </AppBar>

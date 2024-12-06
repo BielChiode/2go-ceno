@@ -1,28 +1,31 @@
 import { Box, Container, Grid2, Typography } from '@mui/material';
 import SectionTitle from '../SectionTitle';
+import projetos from '../../../projetos.json';
+import { useNavigate } from 'react-router-dom';
 
-const portfolioImages = [
-  { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
-  { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
-  { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
-  { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
-  { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
-  { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
-  { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
-  { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
-  { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
-  { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
-  { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
-  { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
-  { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
-  { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
-  { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
-  { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
-  { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
-  { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
-];
+// const portfolioImages = [
+//   { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
+//   { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
+//   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
+//   { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
+//   { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
+//   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
+//   { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
+//   { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
+//   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
+//   { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
+//   { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
+//   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
+//   { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
+//   { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
+//   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
+//   { src: '/assets/biesterfield.jpg', alt: 'Estande Biesterfield' },
+//   { src: '/assets/heineken.jpg', alt: 'Estande Heineken' },
+//   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
+// ];
 
 export function Portifolio() {
+  const navigate = useNavigate();
   return (
     <Box id="portfolio">
       <Container maxWidth="xl">
@@ -54,7 +57,7 @@ export function Portifolio() {
               gap: '8px',
             }}
           >
-            {portfolioImages.map((image, index) => (
+            {projetos.map((projeto, index) => (
               <Box
                 key={index}
                 sx={{
@@ -67,10 +70,11 @@ export function Portifolio() {
                     opacity: 1,
                   },
                 }}
+                onClick={() => navigate(`/detalhes/${projeto.id}`)}
               >
                 <img
-                  src={image.src}
-                  alt={image.alt}
+                  src={projeto.mainImage}
+                  alt={projeto.titulo}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -97,7 +101,7 @@ export function Portifolio() {
                     },
                   }}
                 >
-                  <Typography variant="h6">{image.alt}</Typography>
+                  <Typography variant="h6">{projeto.titulo}</Typography>
                 </Box>
               </Box>
             ))}

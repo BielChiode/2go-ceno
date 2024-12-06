@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "titulo": "Estande Heineken",
+    "descricao": "Descrição do projeto 1",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/heineken.jpg",
+    "images": [
+      "/assets/heineken.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/heineken.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/heineken.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/heineken.jpg",
+      "/assets/heineken.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Projeto 2",
+    "descricao": "Descrição do projeto 2",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/biesterfield.jpg",
+    "images": [
+      "/assets/biesterfield.jpg",
+      "/assets/uol.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/uol.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/uol.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/biesterfield.jpg",
+      "/assets/biesterfield.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Projeto 3",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/uol.jpg",
+    "images": [
+      "/assets/uol.jpg",
+      "/assets/heineken.jpg",
+      "/assets/uol.jpg",
+      "/assets/heineken.jpg",
+      "/assets/uol.jpg",
+      "/assets/heineken.jpg",
+      "/assets/uol.jpg",
+      "/assets/uol.jpg"
+    ]
+  }
+]
