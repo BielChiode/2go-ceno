@@ -24,6 +24,20 @@ import { useNavigate } from 'react-router-dom';
 //   { src: '/assets/uol.jpg', alt: 'Evento UOL verão' },
 // ];
 
+const scrollBarStyle = {
+  '&::-webkit-scrollbar': {
+    height: 8,
+    display: { xs: 'none', md: 'block' },
+  },
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: '#8b949e',
+    borderRadius: 10,
+  },
+  '&::-webkit-scrollbar-track': {
+    backgroundColor: '#FFF',
+  },
+};
+
 export function Portifolio() {
   const navigate = useNavigate();
   return (
@@ -31,23 +45,15 @@ export function Portifolio() {
       <Container maxWidth="xl">
         <SectionTitle>Portifólio</SectionTitle>
         <Box
-          sx={{
-            display: 'flex',
-            overflowX: 'auto',
-            flexWrap: 'nowrap',
-            paddingBottom: 2,
-            '&::-webkit-scrollbar': {
-              height: 8,
-              display: { xs: 'none', md: 'block' },
+          sx={[
+            scrollBarStyle,
+            {
+              display: 'flex',
+              overflowX: 'auto',
+              flexWrap: 'nowrap',
+              paddingBottom: 2,
             },
-            '&::-webkit-scrollbar-thumb': {
-              backgroundColor: '#8b949e',
-              borderRadius: 10,
-            },
-            '&::-webkit-scrollbar-track': {
-              backgroundColor: '#FFF',
-            },
-          }}
+          ]}
         >
           <Box
             sx={{
@@ -144,23 +150,15 @@ function EmpresasAtendidas() {
           container
           alignItems="center"
           spacing={6}
-          sx={{
-            display: 'flex',
-            flexWrap: 'nowrap',
-            overflowX: 'auto',
-            paddingBottom: 2,
-            '&::-webkit-scrollbar': {
-              height: 8,
-              display: { xs: 'none', md: 'block' },
+          sx={[
+            scrollBarStyle,
+            {
+              display: 'flex',
+              flexWrap: 'nowrap',
+              overflowX: 'auto',
+              paddingBottom: 2,
             },
-            '&::-webkit-scrollbar-thumb': {
-              backgroundColor: '#8b949e',
-              borderRadius: 10,
-            },
-            '&::-webkit-scrollbar-track': {
-              backgroundColor: '#FFF',
-            },
-          }}
+          ]}
         >
           {empresasAtendidas.map((logo, index) => (
             <Grid2

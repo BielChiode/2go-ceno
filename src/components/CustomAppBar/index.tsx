@@ -13,9 +13,11 @@ const navegacao = [
 export function CustomAppBar({
   showMenu,
   titulo,
+  icone,
 }: {
   showMenu: boolean;
   titulo?: string;
+  icone?: string;
 }) {
   const handleScroll = (sectionId: string) => {
     const section = document.querySelector(sectionId);
@@ -77,10 +79,23 @@ export function CustomAppBar({
             ))}
           </Box>
         ) : (
-          <Typography variant="h6">{titulo}</Typography>
+          <Typography variant="h6" fontWeight={700}>{titulo}</Typography>
         )}
 
-        <Box></Box>
+        <Box>
+          {icone && (
+            <Box
+              component="img"
+              src={icone}
+              sx={{
+                maxWidth: '100%',
+                maxHeight: 50,
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+          )}
+        </Box>
       </Toolbar>
     </AppBar>
   );

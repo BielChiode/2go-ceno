@@ -13,6 +13,20 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import projetos from '../../../projetos.json';
 
+const scrollBarStyle = {
+  '&::-webkit-scrollbar': {
+    height: 8,
+    display: { xs: 'none', md: 'block' },
+  },
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: '#8b949e',
+    borderRadius: 10,
+  },
+  '&::-webkit-scrollbar-track': {
+    backgroundColor: '#FFF',
+  },
+};
+
 export const Detalhes = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -63,7 +77,11 @@ export const Detalhes = () => {
 
   return (
     <Box>
-      <CustomAppBar showMenu={false} titulo={projeto.titulo} />
+      <CustomAppBar
+        showMenu={false}
+        titulo={projeto.titulo}
+        icone={projeto.icone}
+      />
       {/* Imagem de fundo com overlay */}
       <Box
         sx={{
@@ -85,23 +103,15 @@ export const Detalhes = () => {
         <Grid2 container spacing={4}>
           <Grid2 size={{ xs: 12 }}>
             <Box
-              sx={{
-                display: 'flex',
-                overflowX: 'auto',
-                flexWrap: 'nowrap',
-                paddingBottom: 2,
-                '&::-webkit-scrollbar': {
-                  height: 8,
-                  display: { xs: 'none', md: 'block' },
+              sx={[
+                scrollBarStyle,
+                {
+                  display: 'flex',
+                  overflowX: 'auto',
+                  flexWrap: 'nowrap',
+                  paddingBottom: 2,
                 },
-                '&::-webkit-scrollbar-thumb': {
-                  backgroundColor: '#8b949e',
-                  borderRadius: 10,
-                },
-                '&::-webkit-scrollbar-track': {
-                  backgroundColor: '#FFF',
-                },
-              }}
+              ]}
             >
               <Box
                 sx={{

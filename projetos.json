@@ -5,6 +5,7 @@
     "descricao": "Descrição do projeto 1",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/heineken.jpg",
+    "icone": "/assets/logos/heineken.png",
     "images": [
       "/assets/heineken.jpg",
       "/assets/biesterfield.jpg",
@@ -22,6 +23,7 @@
     "descricao": "Descrição do projeto 2",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/biesterfield.jpg",
+    "icone": "/assets/logos/biesterfield.png",
     "images": [
       "/assets/biesterfield.jpg",
       "/assets/uol.jpg",
@@ -40,6 +42,7 @@
     "descricao": "Descrição do projeto 3",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/uol.jpg",
+    "icone": "/assets/logos/uol.png",
     "images": [
       "/assets/uol.jpg",
       "/assets/heineken.jpg",
