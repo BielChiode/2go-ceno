@@ -3,7 +3,6 @@ import { Box, Typography } from '@mui/material';
 
 export default function SectionTitle({
   children,
-  clickable = false,
 }: {
   children: ReactNode;
   clickable?: boolean;
@@ -25,7 +24,7 @@ export default function SectionTitle({
           display: 'inline-block',
           borderBottom: `2px solid ${theme.palette.primary.light}`,
           ':hover': {
-            cursor: clickable ? 'pointer' : 'default',
+            cursor: 'default',
           },
         })}
       >

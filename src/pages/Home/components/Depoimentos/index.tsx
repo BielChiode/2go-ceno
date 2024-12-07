@@ -1,5 +1,5 @@
-import { Box, Typography, Avatar } from '@mui/material';
-import SectionTitle from '../SectionTitle';
+import { Box, Typography, Avatar, Container } from '@mui/material';
+import SectionTitle from '../TituloSecao';
 
 const testimonials = [
   {
@@ -36,7 +36,7 @@ const testimonials = [
 
 export function Depoimentos() {
   return (
-    <Box py={5} my={5}>
+    <Container maxWidth="lg">
       <SectionTitle>Depoimentos</SectionTitle>
       <Box
         sx={{
@@ -44,6 +44,7 @@ export function Depoimentos() {
           overflowX: 'auto',
           gap: 4,
           py: 2,
+          px: 2,
           '&::-webkit-scrollbar': {
             height: 8,
             display: { xs: 'none', md: 'block' },
@@ -96,6 +97,6 @@ export function Depoimentos() {
           </Box>
         ))}
       </Box>
-    </Box>
+    </Container>
   );
 }

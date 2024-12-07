@@ -5,11 +5,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Detalhes } from './pages/Detalhes';
 import { NotFound } from './pages/NotFound';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detalhes/:id" element={<Detalhes />} />

@@ -2,6 +2,8 @@ import { Box, Container, Typography, useTheme, Grid2 } from '@mui/material';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import ArticleIcon from '@mui/icons-material/Article';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import { BotaoAcao } from '../../../../components/BotaoAcao';
+import { useIsMobile } from '../../../../utils/useIsMobile';
 
 const indicadores = [
   { value: '+90%', label: 'Dos clientes recomendam a 2GO' },
@@ -31,6 +33,7 @@ const dados = [
 
 export function Sobre() {
   const theme = useTheme();
+  const isMobile = useIsMobile();
 
   return (
     <Box
@@ -82,6 +85,16 @@ export function Sobre() {
                 </Box>
               ))}
             </Box>
+            <Box
+              sx={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                mt: 8,
+              }}
+            >
+              <BotaoAcao>Fazer orçamento</BotaoAcao>
+            </Box>
           </Grid2>
 
           {/* Ícones e descrições */}
@@ -108,6 +121,18 @@ export function Sobre() {
               ))}
             </Grid2>
           </Grid2>
+          {isMobile && (
+            <Box
+              sx={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                mt: 5,
+              }}
+            >
+              <BotaoAcao>Fazer orçamento</BotaoAcao>
+            </Box>
+          )}
         </Grid2>
       </Container>
     </Box>

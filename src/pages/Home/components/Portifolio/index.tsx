@@ -1,6 +1,6 @@
 import { Box, Container, Grid2, Typography } from '@mui/material';
-import SectionTitle from '../SectionTitle';
-import projetos from '../../../projetos.json';
+import SectionTitle from '../TituloSecao';
+import projetos from '../../../../../projetos.json';
 import { useNavigate } from 'react-router-dom';
 
 // const portfolioImages = [

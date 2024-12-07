@@ -1,5 +1,6 @@
-import { Box, Typography, Button, Link } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
 import { Instagram, Phone, Email } from '@mui/icons-material';
+import { BotaoAcao } from '../../../../components/BotaoAcao';
 
 export function Footer() {
   return (
@@ -51,18 +52,7 @@ export function Footer() {
         </Box>
       </Box>
 
-      <Button
-        variant="contained"
-        sx={{
-          backgroundColor: '#8a6d3b',
-          color: '#ffffff',
-          fontWeight: 'bold',
-          ':hover': { backgroundColor: '#73552c' },
-        }}
-        href="/contato"
-      >
-        Fale conosco
-      </Button>
+      <BotaoAcao>Fazer orçamento</BotaoAcao>
     </Box>
   );
 }

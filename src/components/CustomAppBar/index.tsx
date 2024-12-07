@@ -1,6 +1,14 @@
-import { Toolbar, AppBar, Button, Box, Typography } from '@mui/material';
+import {
+  Toolbar,
+  AppBar,
+  Button,
+  Box,
+  IconButton,
+  Tooltip,
+} from '@mui/material';
 import logo from '../../assets/favicon.png';
 import { NavLink } from 'react-router-dom';
+import { LocalPhone } from '@mui/icons-material';
 
 const navegacao = [
   { titulo: 'Serviços', id: '#services' },
@@ -12,12 +20,12 @@ const navegacao = [
 
 export function CustomAppBar({
   showMenu,
-  titulo,
   icone,
+  botaoContato,
 }: {
   showMenu: boolean;
-  titulo?: string;
   icone?: string;
+  botaoContato?: boolean;
 }) {
   const handleScroll = (sectionId: string) => {
     const section = document.querySelector(sectionId);
@@ -53,34 +61,34 @@ export function CustomAppBar({
         </Box>
 
         {/* Navegação */}
-        {showMenu ? (
-          <Box
-            sx={{
-              display: 'flex',
-              gap: { xs: 4, md: 2 },
-              overflowX: 'auto',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {navegacao.map((item, index) => (
-              <Button
-                key={index}
-                color="inherit"
-                onClick={() => handleScroll(item.id)}
-                sx={(theme) => ({
-                  '&:hover': {
-                    backgroundColor: theme.palette.primary.dark,
-                    color: '#fff',
-                  },
-                })}
-              >
-                {item.titulo}
-              </Button>
-            ))}
-          </Box>
-        ) : (
-          <Typography variant="h6" fontWeight={700}>{titulo}</Typography>
-        )}
+        <Box>
+          {showMenu && (
+            <Box
+              sx={{
+                display: 'flex',
+                gap: { xs: 4, md: 2 },
+                overflowX: 'auto',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {navegacao.map((item, index) => (
+                <Button
+                  key={index}
+                  color="inherit"
+                  onClick={() => handleScroll(item.id)}
+                  sx={(theme) => ({
+                    '&:hover': {
+                      backgroundColor: theme.palette.primary.dark,
+                      color: '#fff',
+                    },
+                  })}
+                >
+                  {item.titulo}
+                </Button>
+              ))}
+            </Box>
+          )}
+        </Box>
 
         <Box>
           {icone && (
@@ -94,6 +102,25 @@ export function CustomAppBar({
                 objectFit: 'contain',
               }}
             />
+          )}
+          {botaoContato && (
+            <Tooltip title="Fale conosco">
+              <IconButton
+                color="inherit"
+                sx={(theme) => ({
+                  width: 50,
+                  height: 50,
+                  borderColor: theme.palette.primary.dark,
+                  color: theme.palette.primary.dark,
+                  '&:hover': {
+                    backgroundColor: theme.palette.primary.dark,
+                    color: '#fff',
+                  },
+                })}
+              >
+                <LocalPhone />
+              </IconButton>
+            </Tooltip>
           )}
         </Box>
       </Toolbar>

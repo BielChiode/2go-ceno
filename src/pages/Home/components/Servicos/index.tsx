@@ -1,6 +1,6 @@
 import { Box, Container, Grid2, Typography } from '@mui/material';
-import SectionTitle from '../SectionTitle';
-import { useIsMobile } from '../../utils/useIsMobile';
+import SectionTitle from '../TituloSecao';
+import { useIsMobile } from '../../../../utils/useIsMobile';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import EventIcon from '@mui/icons-material/Event';
 import StoreIcon from '@mui/icons-material/Store';
