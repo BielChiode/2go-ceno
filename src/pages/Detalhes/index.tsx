@@ -12,9 +12,8 @@ import { useIsMobile } from '../../utils/useIsMobile';
 import { ArrowBack, LocationOn } from '@mui/icons-material';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import projetos from '../../../projetos.json';
-import SectionTitle from '../Home/components/TituloSecao';
 import { BotaoAcao } from '../../components/BotaoAcao';
+import projetos from '../../../projetos.json';
 
 const scrollBarStyle = {
   '&::-webkit-scrollbar': {
@@ -93,7 +92,14 @@ export const Detalhes = () => {
               <ArrowBack />
             </Tooltip>
           </BotaoAcao>
-          <SectionTitle>{projeto.titulo}</SectionTitle>
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            color="primary.main"
+            gutterBottom
+          >
+            {projeto.titulo}
+          </Typography>
           <Box />
         </Box>
         {/* Imagem de fundo com overlay */}
@@ -109,8 +115,9 @@ export const Detalhes = () => {
             alignItems: 'center',
             justifyContent: 'center',
             color: '#fff',
+            mt: 2,
           }}
-        ></Box>
+        />
 
         {/* Conteúdo abaixo */}
         <Box sx={{ mt: 2 }}>

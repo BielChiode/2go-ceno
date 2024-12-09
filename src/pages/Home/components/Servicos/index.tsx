@@ -1,5 +1,5 @@
 import { Box, Container, Grid2, Typography } from '@mui/material';
-import SectionTitle from '../TituloSecao';
+import TituloSecao from '../../../../components/TituloSecao';
 import { useIsMobile } from '../../../../utils/useIsMobile';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import EventIcon from '@mui/icons-material/Event';
@@ -12,7 +12,7 @@ export function Servicos() {
   return (
     <Box id="services" py={5} mt={5}>
       <Container>
-        <SectionTitle>Nossos serviços</SectionTitle>
+        <TituloSecao>Nossos serviços</TituloSecao>
         <Grid2 container spacing={4} marginX={isMobile ? 0 : 20}>
           <ServicoItem titulo="Estandes" Icon={StoreIcon} />
           <ServicoItem titulo="Convenções" Icon={EventIcon} />

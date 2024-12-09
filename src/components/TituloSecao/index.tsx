@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Box, Typography } from '@mui/material';
 
-export default function SectionTitle({
+export default function TituloSecao({
   children,
 }: {
   children: ReactNode;

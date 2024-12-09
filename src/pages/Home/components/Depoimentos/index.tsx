@@ -1,5 +1,5 @@
 import { Box, Typography, Avatar, Container } from '@mui/material';
-import SectionTitle from '../TituloSecao';
+import TituloSecao from '../../../../components/TituloSecao';
 
 const testimonials = [
   {
@@ -37,7 +37,7 @@ const testimonials = [
 export function Depoimentos() {
   return (
     <Container maxWidth="lg">
-      <SectionTitle>Depoimentos</SectionTitle>
+      <TituloSecao>Depoimentos</TituloSecao>
       <Box
         sx={{
           display: 'flex',
