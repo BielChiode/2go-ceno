@@ -4,54 +4,189 @@
     "titulo": "Estande Heineken",
     "descricao": "Descrição do projeto 1",
     "localizacao": "Expo Postos 2024",
-    "mainImage": "/assets/heineken.jpg",
+    "mainImage": "/assets/heineken/heineken_expo_postos.jpg",
     "icone": "/assets/logos/heineken.png",
     "images": [
-      "/assets/heineken.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/heineken.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/heineken.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/heineken.jpg",
-      "/assets/heineken.jpg"
+      "/assets/heineken/heineken_expo_postos.jpg",
+      "/assets/heineken/heineken_expo_postos_2.jpg",
+      "/assets/heineken/heineken_expo_postos_3.jpg"
     ]
   },
   {
     "id": 2,
-    "titulo": "Projeto 2",
+    "titulo": "Estande Biesterfield",
     "descricao": "Descrição do projeto 2",
     "localizacao": "Expo Postos 2024",
-    "mainImage": "/assets/biesterfield.jpg",
+    "mainImage": "/assets/biesterfield/biesterfield.jpg",
     "icone": "/assets/logos/biesterfield.png",
     "images": [
-      "/assets/biesterfield.jpg",
-      "/assets/uol.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/uol.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/uol.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/biesterfield.jpg",
-      "/assets/biesterfield.jpg"
+      "/assets/biesterfield/biesterfield.jpg",
+      "/assets/biesterfield/biesterfield_2.jpg"
     ]
   },
   {
     "id": 3,
-    "titulo": "Projeto 3",
+    "titulo": "Ativação UOL",
     "descricao": "Descrição do projeto 3",
     "localizacao": "Expo Postos 2024",
-    "mainImage": "/assets/uol.jpg",
+    "mainImage": "/assets/uol/uol_3.jpg",
     "icone": "/assets/logos/uol.png",
     "images": [
-      "/assets/uol.jpg",
-      "/assets/heineken.jpg",
-      "/assets/uol.jpg",
-      "/assets/heineken.jpg",
-      "/assets/uol.jpg",
-      "/assets/heineken.jpg",
-      "/assets/uol.jpg",
-      "/assets/uol.jpg"
+      "/assets/uol/uol.jpg",
+      "/assets/uol/uol_2.jpg",
+      "/assets/uol/uol_3.jpg",
+      "/assets/uol/uol_4.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Ativação Heineken",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "APAS 2024",
+    "mainImage": "/assets/heineken/heineken_ativacao.jpg",
+    "icone": "/assets/logos/heineken.png",
+    "images": [
+      "/assets/heineken/heineken_ativacao.jpg",
+      "/assets/heineken/heineken_ativacao_2.jpg",
+      "/assets/heineken/heineken_ativacao_3.jpg",
+      "/assets/heineken/heineken_ativacao_4.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Estande Biogen",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/biogen/biogen_2.jpg",
+    "icone": "/assets/logos/biogen.png",
+    "images": ["/assets/biogen/biogen.jpg", "/assets/biogen/biogen_2.jpg"]
+  },
+  {
+    "id": 6,
+    "titulo": "Estande Bombay",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/bombay/bombay_2.jpg",
+    "icone": "/assets/logos/bombay.png",
+    "images": [
+      "/assets/bombay/bombay.jpg",
+      "/assets/bombay/bombay_2.jpg",
+      "/assets/bombay/bombay_3.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "titulo": "Ativação Bronco",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/bronco/bronco_3.jpg",
+    "icone": "/assets/logos/bronco.png",
+    "images": [
+      "/assets/bronco/bronco.jpg",
+      "/assets/bronco/bronco_2.jpg",
+      "/assets/bronco/bronco_3.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "Estande Chamex",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Expo Postos 2024",
+    "mainImage": "/assets/chamex/chamex.jpg",
+    "icone": "/assets/logos/chamex.png",
+    "images": ["/assets/chamex/chamex.jpg", "/assets/chamex/chamex_2.jpg"]
+  },
+  {
+    "id": 9,
+    "titulo": "Estande Heineken",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "APAS 2024",
+    "mainImage": "/assets/heineken/heineken_apas_2024_4.jpg",
+    "icone": "/assets/logos/heineken.png",
+    "images": [
+      "/assets/heineken/heineken_apas_2024.jpg",
+      "/assets/heineken/heineken_apas_2024_2.jpg",
+      "/assets/heineken/heineken_apas_2024_3.jpg",
+      "/assets/heineken/heineken_apas_2024_4.jpg",
+      "/assets/heineken/heineken_apas_2024_5.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "titulo": "Estande Intermodal",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "APAS 2024",
+    "mainImage": "/assets/intermodal/intermodal.jpg",
+    "icone": "/assets/logos/intermodal.png",
+    "images": [
+      "/assets/intermodal/intermodal.jpg",
+      "/assets/intermodal/intermodal_2.jpg",
+      "/assets/intermodal/intermodal_3.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "titulo": "Estande Konecta",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "APAS 2024",
+    "mainImage": "/assets/konecta/konecta.jpg",
+    "icone": "/assets/logos/konecta.png",
+    "images": ["/assets/konecta/konecta.jpg", "/assets/konecta/konecta_2.jpg"]
+  },
+  {
+    "id": 12,
+    "titulo": "Estande Nivea",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "APAS 2024",
+    "mainImage": "/assets/nivea/nivea.jpg",
+    "icone": "/assets/logos/nivea.png",
+    "images": ["/assets/nivea/nivea.jpg", "/assets/nivea/nivea_2.jpg"]
+  },
+  {
+    "id": 13,
+    "titulo": "Estande Nutella",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "APAS 2024",
+    "mainImage": "/assets/nutella/nutella.jpg",
+    "icone": "/assets/logos/nutella.png",
+    "images": ["/assets/nutella/nutella.jpg", "/assets/nutella/nutella_2.jpg"]
+  },
+  {
+    "id": 14,
+    "titulo": "Estande Heineken",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Natural Tech",
+    "mainImage": "/assets/heineken/heineken_natural_tech_2024_2.jpg",
+    "icone": "/assets/logos/heineken.png",
+    "images": [
+      "/assets/heineken/heineken_natural_tech_2024.jpg",
+      "/assets/heineken/heineken_natural_tech_2024_2.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "titulo": "Estande P&G",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Natural Tech",
+    "mainImage": "/assets/p&g/p&g_sogesp.jpg",
+    "icone": "/assets/logos/P&G.png",
+    "images": [
+      "/assets/p&g/p&g_sogesp.jpg",
+      "/assets/p&g/p&g_sogesp_2.jpg",
+      "/assets/p&g/p&g_sogesp_3.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "titulo": "Ativação Maverick",
+    "descricao": "Descrição do projeto 3",
+    "localizacao": "Natural Tech",
+    "mainImage": "/assets/maverick/maverick.jpg",
+    "icone": "/assets/logos/maverick.png",
+    "images": [
+      "/assets/maverick/maverick.jpg",
+      "/assets/maverick/maverick_2.jpg",
+      "/assets/maverick/maverick_3.jpg"
     ]
   }
 ]

@@ -19,7 +19,7 @@ export function Servicos() {
           <ServicoItem titulo="Eventos" Icon={CelebrationIcon} />
           <ServicoItem titulo="Cenografias" Icon={DesignServicesIcon} />
           <ServicoItem titulo="Estandes" Icon={StoreIcon} />
-          <ServicoItem titulo="Convenções" Icon={EventIcon} />
+          <ServicoItem titulo="Design de interiores" Icon={EventIcon} />
         </Grid2>
       </Container>
     </Box>
