@@ -1,5 +1,5 @@
 import { CustomAppBar } from '../../components/CustomAppBar';
-import { Depoimentos } from './components/Depoimentos';
+// import { Depoimentos } from './components/Depoimentos';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { Portifolio } from './components/Portifolio';
@@ -16,7 +16,7 @@ export function Home() {
       <Sobre />
       <Portifolio />
       <SobreTime />
-      <Depoimentos />
+      {/* <Depoimentos /> */}
       <Footer />
     </>
   );
