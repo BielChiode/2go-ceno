@@ -5,6 +5,7 @@ import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import EventIcon from '@mui/icons-material/Event';
 import StoreIcon from '@mui/icons-material/Store';
 import CelebrationIcon from '@mui/icons-material/Celebration';
+import FoundationIcon from '@mui/icons-material/Foundation';
 
 export function Servicos() {
   const isMobile = useIsMobile();
@@ -18,8 +19,7 @@ export function Servicos() {
           <ServicoItem titulo="Convenções" Icon={EventIcon} />
           <ServicoItem titulo="Eventos" Icon={CelebrationIcon} />
           <ServicoItem titulo="Cenografias" Icon={DesignServicesIcon} />
-          <ServicoItem titulo="Estandes" Icon={StoreIcon} />
-          <ServicoItem titulo="Design de interiores" Icon={EventIcon} />
+          <ServicoItem titulo="Design de interiores" Icon={FoundationIcon} />
         </Grid2>
       </Container>
     </Box>

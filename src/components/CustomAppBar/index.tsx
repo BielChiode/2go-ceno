@@ -38,7 +38,13 @@ export function CustomAppBar({
   return (
     <AppBar
       position="fixed"
-      sx={{ backgroundColor: "#d4bf7a", boxShadow: "none", padding: "0 20px" }}
+      sx={{
+        backgroundColor: "#d4bf7a",
+        boxShadow: "none",
+        padding: "0 20px",
+        width: "100%",
+        overflowX: "hidden",
+      }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         {/* Seção do logo */}
@@ -62,14 +68,26 @@ export function CustomAppBar({
         </Box>
 
         {/* Navegação */}
-        <Box>
+        <Box
+          sx={{
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            maxWidth: "100%",
+            scrollbarWidth: "thin",
+            "&::-webkit-scrollbar": {
+              height: "4px",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "#aaa",
+              borderRadius: "10px",
+            },
+          }}
+        >
           {showMenu && (
             <Box
               sx={{
                 display: "flex",
                 gap: { xs: 4, md: 2 },
-                overflowX: "auto",
-                whiteSpace: "nowrap",
               }}
             >
               {navegacao.map((item, index) => (

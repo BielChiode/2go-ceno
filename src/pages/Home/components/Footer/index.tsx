@@ -42,7 +42,7 @@ export function Footer() {
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <Email />
-          <Typography>contato@empresa.com</Typography>
+          <Typography>marcelo.chacon@2goceno.com</Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <Instagram />

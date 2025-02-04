@@ -2,7 +2,7 @@
   {
     "id": 1,
     "titulo": "Estande Heineken",
-    "descricao": "Descrição do projeto 1",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/heineken/heineken_expo_postos.jpg",
     "icone": "/assets/logos/heineken.png",
@@ -19,7 +19,7 @@
   {
     "id": 2,
     "titulo": "Estande Biesterfield",
-    "descricao": "Descrição do projeto 2",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/biesterfield/biesterfield.jpg",
     "icone": "/assets/logos/biesterfield.png",
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "titulo": "Ativação UOL",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/uol/uol_3.jpg",
     "icone": "/assets/logos/uol.png",
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "titulo": "Ativação Heineken",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "APAS 2024",
     "mainImage": "/assets/heineken/heineken_ativacao.jpg",
     "icone": "/assets/logos/heineken.png",
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "titulo": "Estande Biogen",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/biogen/biogen_2.jpg",
     "icone": "/assets/logos/biogen.png",
@@ -72,7 +72,7 @@
   {
     "id": 6,
     "titulo": "Estande Bombay",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/bombay/bombay_2.jpg",
     "icone": "/assets/logos/bombay.png",
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "titulo": "Ativação Bronco",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/bronco/bronco_3.jpg",
     "icone": "/assets/logos/bronco.png",
@@ -100,7 +100,7 @@
   {
     "id": 8,
     "titulo": "Estande Chamex",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Expo Postos 2024",
     "mainImage": "/assets/chamex/chamex.jpg",
     "icone": "/assets/logos/chamex.png",
@@ -110,7 +110,7 @@
   {
     "id": 9,
     "titulo": "Estande Heineken",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "APAS 2024",
     "mainImage": "/assets/heineken/heineken_apas_2024_3.jpeg",
     "icone": "/assets/logos/heineken.png",
@@ -129,7 +129,7 @@
   {
     "id": 10,
     "titulo": "Estande Intermodal",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "APAS 2024",
     "mainImage": "/assets/intermodal/intermodal.jpg",
     "icone": "/assets/logos/intermodal.png",
@@ -143,7 +143,7 @@
   {
     "id": 11,
     "titulo": "Estande Konecta",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "APAS 2024",
     "mainImage": "/assets/konecta/konecta.jpg",
     "icone": "/assets/logos/konecta.png",
@@ -153,7 +153,7 @@
   {
     "id": 12,
     "titulo": "Estande Nivea",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "APAS 2024",
     "mainImage": "/assets/nivea/nivea.jpg",
     "icone": "/assets/logos/nivea.png",
@@ -163,7 +163,7 @@
   {
     "id": 13,
     "titulo": "Estande Nutella",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "APAS 2024",
     "mainImage": "/assets/nutella/nutella.jpg",
     "icone": "/assets/logos/nutella.png",
@@ -173,7 +173,7 @@
   {
     "id": 14,
     "titulo": "Estande Heineken",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Natural Tech",
     "mainImage": "/assets/heineken/heineken_natural_tech_2024_2.jpg",
     "icone": "/assets/logos/heineken.png",
@@ -186,7 +186,7 @@
   {
     "id": 15,
     "titulo": "Estande P&G",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Natural Tech",
     "mainImage": "/assets/p&g/p&g_sogesp.jpg",
     "icone": "/assets/logos/P&G.png",
@@ -200,7 +200,7 @@
   {
     "id": 16,
     "titulo": "Ativação Maverick",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Natural Tech",
     "mainImage": "/assets/maverick/maverick.jpg",
     "icone": "/assets/logos/maverick.png",
@@ -214,7 +214,7 @@
   {
     "id": 17,
     "titulo": "Estande Heineken",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Expo Catadores",
     "mainImage": "/assets/heineken/heineken_expo_catadores.jpeg",
     "icone": "/assets/logos/heineken.png",
@@ -227,7 +227,7 @@
   {
     "id": 18,
     "titulo": "Estande Heineken",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Apas 2022",
     "mainImage": "/assets/heineken/heineken_apas.jpg",
     "icone": "/assets/logos/heineken.png",
@@ -243,7 +243,7 @@
   {
     "id": 19,
     "titulo": "Estande Heineken",
-    "descricao": "Descrição do projeto 3",
+    "descricao": "",
     "localizacao": "Apas 2023",
     "mainImage": "/assets/heineken/heineken_apas_2023_3.jpg",
     "icone": "/assets/logos/heineken.png",
